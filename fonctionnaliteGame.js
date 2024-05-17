@@ -1,21 +1,17 @@
-// function isCorrect(couleurs) {
-//   let userColors = couleurs.split(" ");
-//   if (userColors.length !== 4) {
-//     console.log("mon nombre d'entrée est différent de 4");
-//     return false;
-//   }
-//   else {
-//     for (let i = 0; i < userColors.length; i++) {
-//       let result = arrayColorPossible.includes(userColors[i]);
-//       console.log(result);
-//       if (result === false) {
-//         return false;
-//       }
-//     }
-//   }
-//   return true;
-// }
 const resultatGame = document.getElementById("resultatGame");
+const checkEssai1 = document.getElementById("checkEssai1");
+const checkEssai2 = document.getElementById("checkEssai2");
+const checkEssai3 = document.getElementById("checkEssai3");
+const checkEssai4 = document.getElementById("checkEssai4");
+const checkEssai5 = document.getElementById("checkEssai5");
+const checkEssai6 = document.getElementById("checkEssai6");
+const checkEssai7 = document.getElementById("checkEssai7");
+const checkEssai8 = document.getElementById("checkEssai8");
+const checkEssai9 = document.getElementById("checkEssai9");
+const checkEssai10 = document.getElementById("checkEssai10");
+const checkEssai11 = document.getElementById("checkEssai11");
+const checkEssai12 = document.getElementById("checkEssai12");
+
 let resultat = "";
 
 const arrayColorPossible = [
@@ -29,23 +25,37 @@ const arrayColorPossible = [
   "Marron",
 ];
 
-// function playerGuess(proposition) {
-//   let userInput = prompt(
-//     "donne moi 4 couleurs parmi:bleu,vert,rouge,jaune, violet,orange,rose,marron séparées par un espace pour deviner la combinaison stp? par ex: bleu vert jaune rouge'"
-//   );
-//   let userInput = proposition;
-//   while (isCorrect(userInput) === false) {
-//     userInput = prompt(
-//       "donne moi 4 couleurs parmi:bleu,vert,rouge,jaune, violet,orange,rose,marron séparées par un espace pour deviner la combinaison stp? par ex: bleu vert jaune rouge'"
-//     );
-//   }
-//   return userInput.split(" ");
-// }
+function statutValue(essai, goodValue, badValue) {
+  console.log("je suis rentrée dans statutValue");
+
+  for (let i = 0; i < 13; i++) {
+    let compteur = i;
+    if (essai === i) {
+      console.log("good ds checkcolor" + goodValue);
+      console.log("bad ds checkcolor" + badValue);
+      for (let i = 0; i < goodValue; i++) {
+        const newDiv = document.createElement("div");
+        newDiv.className = "bouleBlanche";
+        document
+          .querySelector("#checkEssai" + (compteur + 1))
+          .appendChild(newDiv);
+      }
+
+      for (let i = 0; i < badValue; i++) {
+        const newDiv = document.createElement("div");
+        newDiv.className = "bouleNoire";
+        document
+          .querySelector("#checkEssai" + (compteur + 1))
+          .appendChild(newDiv);
+        console.log(compteur);
+      }
+    }
+  }
+}
 
 function checkColor(guess, codeSecret) {
   let goodValue = 0;
   let badValue = 0;
-
   for (let i = 0; i < 4; i++) {
     if (guess[i] === codeSecret[i]) {
       goodValue += 1;
@@ -62,14 +72,7 @@ function checkColor(guess, codeSecret) {
     resultatGame.innerHTML = resultat;
     return true;
   } else {
-    alert(
-      "tu n'as pas trouvé la bonne solution, tu as " +
-        goodValue +
-        " bien placés et bonne couleurs," +
-        "tu as " +
-        badValue +
-        " mal placés mais bonne couleur"
-    );
+    statutValue(essai, goodValue, badValue);
     return false;
   }
 }
@@ -85,21 +88,6 @@ function secretCode() {
 }
 
 function gamePlay(proposition, codeSecret) {
-  //let win = false;
-  //let essai = 0;
-  //do {
-  //let guess = playerGuess();
   let guess = proposition;
   win = checkColor(guess, codeSecret);
-  // if (win === false) {
-  //   //essai += 1;
-  //   alert(
-  //     "il te reste " +
-  //       (12 - parseInt(essai)) +
-  //       " essais pour trouver la combinaison"
-  //   );
-  // } else {
-  //   alert("tu as gagné avec " + essai + " essais");
-  // }
-  //} while (win === false && essai <= 12);
 }

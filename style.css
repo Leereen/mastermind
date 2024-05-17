@@ -112,7 +112,7 @@ h1:hover{
 }
 
 .bouleBlanche{
-    background: radial-gradient( rgb(134, 134, 131), rgb(245, 244, 243));
+    background-color:white;
     border-radius: 50%;
     width:10px;
     height:10px;
@@ -120,7 +120,7 @@ h1:hover{
 }
 
 .bouleNoire{
-    background: radial-gradient( rgb(37, 36, 33), rgb(5, 4, 0));
+    background-color:black;
     border-radius: 50%;
     width:10px;
     height:10px;
@@ -131,6 +131,7 @@ h1:hover{
 .essai{
     display:flex;
     justify-content: center; 
+    align-items: center;
     border:1px solid purple;
     border-radius:10px;
     padding:1%;

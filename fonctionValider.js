@@ -1,4 +1,5 @@
 const validateButton = document.getElementById("validateButton");
+console.log(validateButton);
 let essai = 0;
 
 function findBouleCouleur(boule) {
@@ -38,9 +39,10 @@ validateButton.addEventListener("click", () => {
       findBouleCouleur(boule2),
       findBouleCouleur(boule1)
     );
-    gamePlay(proposition, codeSecret);
+
     console.log(proposition);
+
+    gamePlay(proposition, codeSecret);
     essai += 1;
-    console.log(essai);
   }
 });
