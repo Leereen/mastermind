@@ -1,0 +1,182 @@
+#containeur{
+    background-image: url("https://www.wallpapertip.com/wmimgs/59-593496_home-design-pastel-spring-colors-background.jpg");
+    background-repeat: repeat;
+}
+
+h1{
+    text-align: center;
+    font-family: World-of-spell ;
+    font-size:60px;
+    letter-spacing: 10px;
+    background: linear-gradient(to left, red, blue);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1%;
+}
+
+h1:hover{
+    transform:scale(1.1);
+    transition:all 0.2s ease-in-out
+}
+
+@media only screen and (max-width: 500px) {
+    h1 {
+    font-size: 20px;
+    }
+    }
+
+#bouleDeco{
+    display: flex;
+    justify-content: center;
+}
+
+.bouleRouge{
+    background: radial-gradient( rgb(245, 45, 41), rgb(94, 8, 8));
+    border-radius: 50%;
+    width:25px;
+    height:25px;
+    margin-left: 1%;
+    margin-right:1%;
+}
+
+.bouleBleu{
+    background: radial-gradient( rgb(29, 172, 249),rgb(21, 11, 100));
+    border-radius: 50%;
+    width:25px;
+    height:25px;
+    margin-left: 1%;
+    margin-right:1%;
+ 
+}
+
+.bouleVerte{
+    background:radial-gradient(  rgb(51, 249, 29),rgb(7, 61, 24));
+    border-radius: 50%;
+    width:25px;
+    height:25px;
+    margin-left: 1%;
+    margin-right:1%;
+}
+
+.bouleJaune{
+    background: radial-gradient( rgb(246, 227, 59), rgb(196, 149, 9));
+    border-radius: 50%;
+    width:25px;
+    height:25px;
+    margin-left: 1%;
+    margin-right:1%;
+}
+
+.bouleViolet{
+    background: radial-gradient( rgb(152, 81, 246), rgb(36, 3, 79));
+    border-radius: 50%;
+    width:25px;
+    height:25px;
+    margin-left: 1%;
+    margin-right:1%;
+}
+
+.bouleOrange{
+    background: radial-gradient( rgb(226, 149, 95), rgb(171, 85, 4));
+    border-radius: 50%;
+    width:25px;
+    height:25px;
+    margin-left: 1%;
+    margin-right:1%;
+}
+
+.bouleMarron{
+    background: radial-gradient( rgb(226, 149, 95), rgb(47, 23, 1));
+    border-radius: 50%;
+    width:25px;
+    height:25px;
+    margin-left: 1%;
+    margin-right:1%;
+}
+
+.bouleRose{
+    background: radial-gradient( rgb(226, 95, 200), rgb(103, 18, 82));
+    border-radius: 50%;
+    width:25px;
+    height:25px;
+    margin-left: 1%;
+    margin-right:1%;
+}
+
+.bouleVierge{
+    background: radial-gradient( rgb(249, 248, 242), rgb(12, 9, 0));
+    border-radius: 50%;
+    width:25px;
+    height:25px;
+    margin: 0 5%; 
+}
+
+.bouleBlanche{
+    background: radial-gradient( rgb(134, 134, 131), rgb(245, 244, 243));
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    margin: 0 5%; 
+}
+
+.bouleNoire{
+    background: radial-gradient( rgb(37, 36, 33), rgb(5, 4, 0));
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    margin: 0 5%; 
+}
+
+
+.essai{
+    display:flex;
+    justify-content: center; 
+    border:1px solid purple;
+    border-radius:10px;
+    padding:1%;
+    margin-top:2%;
+    height:25px;
+}
+
+#choixCouleur{
+    display:flex;
+    justify-content: center;
+}
+
+#choixCouleurEssai,#checkCouleurEssai{
+    border:2px purple solid;
+    width:15%;
+    padding:1%
+}
+
+#choixCouleurEssai{
+    border-radius: 10px 0 0 10px;
+}
+
+#checkCouleurEssai{
+    border-radius: 0 10px 10px 0;
+}
+.validateColor{
+    height:25px
+}
+#piedDePage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+#couleurPossible{
+    display:flex;
+    margin-left:2%;
+    border:2px purple solid;
+    border-radius: 10px;
+    padding:1%;
+    margin-left: 5%;
+}
+
+#validateButton{
+    margin-left: 50%;
+    
+}
+
+

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind</title>
+    <script defer src="fonctionnaliteGame.js"></script>
+    <script defer src="changementBVBC.js"></script>
+    <script defer src="fonctionValider.js"></script>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="containeur">
+    <div>
+        <h1>MASTERMIND</h1>
+        <div id="bouleDeco">
+            <div class="bouleRouge"></div>
+            <div class="bouleBleu"></div>
+            <div class="bouleVerte"></div>
+            <div class="bouleJaune"></div>
+        </div>
+        <hr>
+        <div id="choixCouleur">
+            <div id="resultatGame"></div>
+            <div id="choixCouleurEssai">
+                <div class="essai" id="try12">
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                </div>
+                <div class="essai" id="try11">
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                </div>
+                <div class="essai" id="try10">
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                </div>
+                <div class="essai" id="try9">
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                </div>
+                <div class="essai" id="try8">
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                </div>
+                <div class="essai" id="try7">
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                </div>
+                <div class="essai" id="try6">
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                </div>
+                <div class="essai" id="try5">
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                </div>
+                <div class="essai" id="try4">
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                </div>
+                <div class="essai" id="try3">
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                </div>
+                <div class="essai" id="try2">
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                </div>
+                <div class="essai" id="try1">
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                    <div class="bouleVierge"></div>
+                </div>
+            </div>
+            <div id="checkCouleurEssai">
+                <div class="essai">
+                    <!-- <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div> -->
+                </div>
+                <div class="essai">
+                    <!-- <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div> -->
+                </div>
+                <div class="essai">
+                    <!-- <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div> -->
+                </div>
+                <div class="essai">
+                    <!-- <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div> -->
+                </div>
+                <div class="essai">
+                    <!-- <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div> -->
+                </div>
+                <div class="essai">
+                    <!-- <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div> -->
+                </div>
+                <div class="essai">
+                    <!-- <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div> -->
+                </div>
+                <div class="essai">
+                    <!-- <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div> -->
+                </div>
+                <div class="essai">
+                    <!-- <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div> -->
+                </div>
+                <div class="essai">
+                    <!-- <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div> -->
+                </div>
+                <div class="essai">
+                    <!-- <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div> -->
+                </div>
+                <div class="essai">
+                    <!-- <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div>
+                    <div class="validateColor"></div> -->
+                </div>
+            </div>
+        </div>
+        <div id="piedDePage">
+            <div>
+                <button id="instructionButton">Instructions</button>
+            </div>
+            <div>
+                <button id="validateButton">OK</button>
+            </div>
+            <div id="couleurPossible">
+                <div class="bouleBleu" id="bleu"></div>
+                <div class="bouleJaune" id="jaune"></div>
+                <div class="bouleViolet" id="violet"></div>
+                <div class="bouleOrange" id="orange"></div>
+                <div class="bouleVerte" id="vert"></div>
+                <div class="bouleRouge" id="rouge"></div>
+                <div class="bouleMarron" id="marron"></div>
+                <div class="bouleRose" id="rose"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>
