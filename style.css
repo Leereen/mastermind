@@ -39,7 +39,7 @@ h1:hover{
     margin-right:1%;
 }
 
-.bouleBleu{
+.bouleBleu,.bouleVierge[data-color="bleu"]{
     background: radial-gradient( rgb(29, 172, 249),rgb(21, 11, 100));
     border-radius: 50%;
     width:25px;
