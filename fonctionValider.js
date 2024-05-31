@@ -24,7 +24,7 @@ const codeSecret = secretCode();
 
 validateButton.addEventListener("click", () => {
   if (essai >= 11) {
-    resultat = "Vous avez perdu";
+    resultat = "Vous avez perdu, la bonne combinaison est " + codeSecret;
     resultatGame.innerHTML = resultat;
   } else {
     let proposition = [];

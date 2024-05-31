@@ -1,17 +1,4 @@
 const resultatGame = document.getElementById("resultatGame");
-const checkEssai1 = document.getElementById("checkEssai1");
-const checkEssai2 = document.getElementById("checkEssai2");
-const checkEssai3 = document.getElementById("checkEssai3");
-const checkEssai4 = document.getElementById("checkEssai4");
-const checkEssai5 = document.getElementById("checkEssai5");
-const checkEssai6 = document.getElementById("checkEssai6");
-const checkEssai7 = document.getElementById("checkEssai7");
-const checkEssai8 = document.getElementById("checkEssai8");
-const checkEssai9 = document.getElementById("checkEssai9");
-const checkEssai10 = document.getElementById("checkEssai10");
-const checkEssai11 = document.getElementById("checkEssai11");
-const checkEssai12 = document.getElementById("checkEssai12");
-
 let resultat = "";
 
 const arrayColorPossible = [
