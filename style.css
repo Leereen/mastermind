@@ -30,7 +30,7 @@ h1:hover{
     justify-content: center;
 }
 
-.bouleRouge{
+.bouleRouge,.bouleVierge[data-color="rouge"]{
     background: radial-gradient( rgb(245, 45, 41), rgb(94, 8, 8));
     border-radius: 50%;
     width:25px;
@@ -49,7 +49,7 @@ h1:hover{
  
 }
 
-.bouleVerte{
+.bouleVerte,.bouleVierge[data-color="vert"]{
     background:radial-gradient(  rgb(51, 249, 29),rgb(7, 61, 24));
     border-radius: 50%;
     width:25px;
@@ -58,7 +58,7 @@ h1:hover{
     margin-right:1%;
 }
 
-.bouleJaune{
+.bouleJaune,.bouleVierge[data-color="jaune"]{
     background: radial-gradient( rgb(246, 227, 59), rgb(196, 149, 9));
     border-radius: 50%;
     width:25px;
@@ -67,7 +67,7 @@ h1:hover{
     margin-right:1%;
 }
 
-.bouleViolet{
+.bouleViolet,.bouleVierge[data-color="violet"]{
     background: radial-gradient( rgb(152, 81, 246), rgb(36, 3, 79));
     border-radius: 50%;
     width:25px;
@@ -76,7 +76,7 @@ h1:hover{
     margin-right:1%;
 }
 
-.bouleOrange{
+.bouleOrange,.bouleVierge[data-color="orange"]{
     background: radial-gradient( rgb(226, 149, 95), rgb(171, 85, 4));
     border-radius: 50%;
     width:25px;
@@ -85,7 +85,7 @@ h1:hover{
     margin-right:1%;
 }
 
-.bouleMarron{
+.bouleMarron,.bouleVierge[data-color="marron"]{
     background: radial-gradient( rgb(226, 149, 95), rgb(47, 23, 1));
     border-radius: 50%;
     width:25px;
@@ -94,7 +94,7 @@ h1:hover{
     margin-right:1%;
 }
 
-.bouleRose{
+.bouleRose,.bouleVierge[data-color="rose"]{
     background: radial-gradient( rgb(226, 95, 200), rgb(103, 18, 82));
     border-radius: 50%;
     width:25px;

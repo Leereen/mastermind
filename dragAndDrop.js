@@ -1,21 +1,37 @@
-const selectBoule = document.querySelector(".selectBoule");
+const selectBoules = document.querySelectorAll(".selectBoule[data-color]");
+console.log(selectBoules);
 let selectedColor;
 const dropBoule = document.querySelector(".bouleVierge");
-console.log(selectBoule);
+
 console.log(dropBoule);
-//for (let selectBoule of selectBoules) {
-selectBoule.ondragstart = (e) => {
-  e.dataTransfer.setData("text/plain", selectBoule.innerHTML);
-  selectedColor = selectBoule.dataset.color;
-  console.log(selectedColor);
-  //selectBoule.classList.add("dragged");
-};
+
+selectBoules.forEach((boule) => {
+  boule.addEventListener("dragstart", (event) => {
+    selectedColor = boule.getAttribute("data-color");
+    event.dataTransfer.setData("textplain", selectedColor);
+  });
+});
+
+// dropBoules.forEach((dropBoule) => {
+//   dropBoule.addEventListener("dragover", (event) => {
+//     e.preventDefault();
+//   });
+// });
 
 dropBoule.ondragover = (e) => {
   e.preventDefault();
 };
 
 // quand on survole la zone de drop
+
+// dropBoules.forEach((dropBoule) => {
+//   dropBoule.addEventListener("dragenter", () => {
+//     dropBoule.classList.add("dropHover");
+//     dropBoule.dataset.color = selectedColor;
+//     console.log(dropBoule.dataset.color);
+//   });
+// });
+
 dropBoule.ondragenter = () => {
   //dropBoule.classList.add("dropHover");
   dropBoule.dataset.color = selectedColor;
@@ -28,12 +44,12 @@ dropBoule.ondragleave = () => {
 };
 
 //remet à 0 le css sur l'élément glisser
-selectBoule.ondragend = () => {
+selectBoules.ondragend = () => {
   //selectBoule.classList.remove("dragged");
 };
 
 // permet de changer la valeur de la boule drop avec la nouvelle
-selectBoule.ondrop = (e) => {
+selectBoules.ondrop = (e) => {
   dropBoule.innerHTML = e.dataTransfer.getData("text/plain");
   dropBoule.dataset.color = selectedColor;
   console.log(dropBoule.dataset.color);
