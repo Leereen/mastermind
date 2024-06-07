@@ -41,8 +41,15 @@ validateButton.addEventListener("click", () => {
     );
 
     console.log(proposition);
-
-    gamePlay(proposition, codeSecret);
-    essai += 1;
+    console.log(proposition[0]);
+    if (
+      proposition[0] != null &&
+      proposition[1] != null &&
+      proposition[2] != null &&
+      proposition[3] != null
+    ) {
+      gamePlay(proposition, codeSecret);
+      essai += 1;
+    }
   }
 });

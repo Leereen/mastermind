@@ -31,7 +31,7 @@ h1:hover {
 }
 
 .bouleRouge,
-.bouleVierge[data-color="rouge"] {
+.bouleVierge[data-color="Rouge"] {
   background: radial-gradient(rgb(245, 45, 41), rgb(94, 8, 8));
   border-radius: 50%;
   width: 25px;
@@ -41,7 +41,7 @@ h1:hover {
 }
 
 .bouleBleu,
-.bouleVierge[data-color="bleu"] {
+.bouleVierge[data-color="Bleu"] {
   background: radial-gradient(rgb(29, 172, 249), rgb(21, 11, 100));
   border-radius: 50%;
   width: 25px;
@@ -52,7 +52,7 @@ h1:hover {
 }
 
 .bouleVerte,
-.bouleVierge[data-color="vert"] {
+.bouleVierge[data-color="Verte"] {
   background: radial-gradient(rgb(51, 249, 29), rgb(7, 61, 24));
   border-radius: 50%;
   width: 25px;
@@ -62,7 +62,7 @@ h1:hover {
 }
 
 .bouleJaune,
-.bouleVierge[data-color="jaune"] {
+.bouleVierge[data-color="Jaune"] {
   background: radial-gradient(rgb(246, 227, 59), rgb(196, 149, 9));
   border-radius: 50%;
   width: 25px;
@@ -72,7 +72,7 @@ h1:hover {
 }
 
 .bouleViolet,
-.bouleVierge[data-color="violet"] {
+.bouleVierge[data-color="Violet"] {
   background: radial-gradient(rgb(152, 81, 246), rgb(36, 3, 79));
   border-radius: 50%;
   width: 25px;
@@ -82,7 +82,7 @@ h1:hover {
 }
 
 .bouleOrange,
-.bouleVierge[data-color="orange"] {
+.bouleVierge[data-color="Orange"] {
   background: radial-gradient(rgb(226, 149, 95), rgb(171, 85, 4));
   border-radius: 50%;
   width: 25px;
@@ -92,7 +92,7 @@ h1:hover {
 }
 
 .bouleMarron,
-.bouleVierge[data-color="marron"] {
+.bouleVierge[data-color="Marron"] {
   background: radial-gradient(rgb(226, 149, 95), rgb(47, 23, 1));
   border-radius: 50%;
   width: 25px;
@@ -102,7 +102,7 @@ h1:hover {
 }
 
 .bouleRose,
-.bouleVierge[data-color="rose"] {
+.bouleVierge[data-color="Rose"] {
   background: radial-gradient(rgb(226, 95, 200), rgb(103, 18, 82));
   border-radius: 50%;
   width: 25px;

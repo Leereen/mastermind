@@ -23,6 +23,9 @@ dropBoules.forEach((dropBoule) => {
   });
   dropBoule.addEventListener("drop", () => {
     dropBoule.dataset.color = selectedColor;
+    dropBoule.classList.add("boule" + selectedColor);
+    console.log(dropBoule.classList.add);
     console.log(dropBoule.dataset.color);
   });
 });
+console.log(dropBoules);
