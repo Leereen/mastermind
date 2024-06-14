@@ -343,3 +343,7 @@ h1:hover {
   margin-left: 50px;
   width: 50px;
 }
+
+.inactive {
+  pointer-events: none;
+}

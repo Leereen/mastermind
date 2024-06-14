@@ -6,6 +6,7 @@
     <title>Mastermind</title>
     <script defer src="fonctionnaliteGame.js"></script>
     <script defer src="dragAndDrop.js"></script>
+    <script defer src="activateDeactivateBoule.js"></script>
     <script defer src="changementBVBC.js"></script>
     <script defer src="fonctionValider.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -27,70 +28,70 @@
             <div id="resultatGame"></div>
             <div id="choixCouleurEssai">
                 <div class="essai" id="try12">
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
                 </div>
                 <div class="essai" id="try11">
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
                 </div>
                 <div class="essai" id="try10">
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
                 </div>
                 <div class="essai" id="try9">
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
                 </div>
                 <div class="essai" id="try8">
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive " data-color="gris"></div>
                 </div>
                 <div class="essai" id="try7">
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
                 </div>
                 <div class="essai" id="try6">
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
                 </div>
                 <div class="essai" id="try5">
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
                 </div>
                 <div class="essai" id="try4">
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
                 </div>
                 <div class="essai" id="try3">
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
                 </div>
                 <div class="essai" id="try2">
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
-                    <div class="bouleVierge" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
+                    <div class="bouleVierge inactive" data-color="gris"></div>
                 </div>
                 <div class="essai" id="try1">
                     <div class="bouleVierge" data-color="gris"></div>

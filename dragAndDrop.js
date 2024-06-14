@@ -15,12 +15,6 @@ dropBoules.forEach((dropBoule) => {
   dropBoule.addEventListener("dragover", (e) => {
     e.preventDefault();
   });
-  dropBoule.addEventListener("dragenter", () => {
-    dropBoule.dataset.color = selectedColor;
-  });
-  dropBoule.addEventListener("dragleave", () => {
-    dropBoule.dataset.color = "gris";
-  });
   dropBoule.addEventListener("drop", () => {
     dropBoule.dataset.color = selectedColor;
     dropBoule.classList.add("boule" + selectedColor);

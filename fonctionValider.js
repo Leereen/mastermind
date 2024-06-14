@@ -1,5 +1,4 @@
 const validateButton = document.getElementById("validateButton");
-console.log(validateButton);
 let essai = 0;
 
 function findBouleCouleur(boule) {
@@ -41,15 +40,18 @@ validateButton.addEventListener("click", () => {
     );
 
     console.log(proposition);
-    console.log(proposition[0]);
+
     if (
       proposition[0] != null &&
       proposition[1] != null &&
       proposition[2] != null &&
       proposition[3] != null
     ) {
+      console.log(" essai avant activation boule" + essai);
       gamePlay(proposition, codeSecret);
+      deactivateBoule(essai);
       essai += 1;
+      activateBoule(essai);
     }
   }
 });
