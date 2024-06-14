@@ -52,6 +52,14 @@ validateButton.addEventListener("click", () => {
       deactivateBoule(essai);
       essai += 1;
       activateBoule(essai);
+    } else {
+      Swal.fire({
+        title: "⚠️ Attention",
+        html: `<p>Tu as oublié de mettre 1 ou plusieurs couleurs sur ton essai</p>`,
+        width: 400,
+        height: 50,
+        confirmButtonText: "OK",
+      });
     }
   }
 });

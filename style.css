@@ -1,5 +1,5 @@
 #containeur {
-  background-image: url("https://www.wallpapertip.com/wmimgs/59-593496_home-design-pastel-spring-colors-background.jpg");
+  background-image: url("/fondEcran.jpg");
   background-repeat: repeat;
 }
 
@@ -132,7 +132,8 @@ h1:hover {
 }
 
 .bouleBlanche {
-  background-color: white;
+  background-color: rgb(249, 249, 249);
+  border: solid black 1px;
   border-radius: 50%;
   width: 10px;
   height: 10px;
@@ -141,6 +142,7 @@ h1:hover {
 
 .bouleNoire {
   background-color: black;
+  border: solid black 1px;
   border-radius: 50%;
   width: 10px;
   height: 10px;
