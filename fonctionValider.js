@@ -23,8 +23,12 @@ const codeSecret = secretCode();
 
 validateButton.addEventListener("click", () => {
   if (essai >= 11) {
-    resultat = "Vous avez perdu, la bonne combinaison est " + codeSecret;
-    resultatGame.innerHTML = resultat;
+    Swal.fire({
+      title: "Vous avez perdu!😭",
+      html: `<p>La bonne combinaison est ${codeSecret}</p>`,
+      width: 300,
+      confirmButtonText: "Rejouer",
+    });
   } else {
     let proposition = [];
     let boule1 = bouleVierge[bouleVierge.length - 1 - 0 - essai * 4];

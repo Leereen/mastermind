@@ -55,8 +55,11 @@ function checkColor(guess, codeSecret) {
     }
   }
   if (goodValue === 4) {
-    resultat = "Vous avez gagné";
-    resultatGame.innerHTML = resultat;
+    Swal.fire({
+      title: "Vous avez gagné!🥳",
+      width: 300,
+      confirmButtonText: "Rejouer",
+    });
     return true;
   } else {
     statutValue(essai, goodValue, badValue);
