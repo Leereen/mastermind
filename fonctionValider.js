@@ -28,6 +28,10 @@ validateButton.addEventListener("click", () => {
       html: `<p>La bonne combinaison est ${codeSecret}</p>`,
       width: 300,
       confirmButtonText: "Rejouer",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.reload();
+      }
     });
   } else {
     let proposition = [];

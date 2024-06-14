@@ -59,6 +59,10 @@ function checkColor(guess, codeSecret) {
       title: "Vous avez gagné!🥳",
       width: 300,
       confirmButtonText: "Rejouer",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.reload();
+      }
     });
     return true;
   } else {
