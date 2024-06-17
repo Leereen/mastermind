@@ -194,11 +194,14 @@ h1:hover {
 
 #couleurPossible {
   display: flex;
-  margin-left: 2%;
+  width: 17rem;
+  justify-content: space-evenly;
   border: 2px purple solid;
   border-radius: 10px;
-  padding: 1%;
-  margin-left: 5%;
+  padding: 0.5%;
+  margin-left: -2.3%;
+
+
 }
 
 .selectBoule {
@@ -342,8 +345,12 @@ h1:hover {
 }
 
 #validateButton {
-  margin-left: 50px;
   width: 50px;
+  margin-left: 2rem
+}
+
+#instructionButton {
+  margin-left: 2.7rem
 }
 
 .inactive {

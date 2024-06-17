@@ -116,30 +116,15 @@
             </div>
         </div>
         <div id="piedDePage">
-            <div>
-                <button class="button" id="instructionButton">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      class="icon"
-                    >
-                      <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
-                      <g
-                        stroke-linejoin="round"
-                        stroke-linecap="round"
-                        id="SVGRepo_tracerCarrier"
-                      ></g>
-                      <g id="SVGRepo_iconCarrier">
-                        <path
-                          fill="#222222"
-                          d="M11.5 13.8H10.1299C8.72143 13.8 8.01721 13.8 7.72228 13.3385C7.42735 12.8769 7.72321 12.2379 8.31493 10.9597L11.0463 5.06006C11.4205 4.25182 11.6075 3.8477 11.8038 3.89091C12 3.93413 12 4.37946 12 5.27013V9.7C12 9.9357 12 10.0536 12.0732 10.1268C12.1464 10.2 12.2643 10.2 12.5 10.2H13.8701C15.2786 10.2 15.9828 10.2 16.2777 10.6615C16.5726 11.1231 16.2768 11.7621 15.6851 13.0402L12.9537 18.9399C12.5795 19.7482 12.3925 20.1523 12.1962 20.1091C12 20.0659 12 19.6205 12 18.7299V14.3C12 14.0643 12 13.9464 11.9268 13.8732C11.8536 13.8 11.7357 13.8 11.5 13.8Z"
-                        ></path>
-                      </g>
-                    </svg>
-                    <span class="title"> REGLES DU JEU</span>
-                    <span class="border"></span>
-                  </button>
+            <div id="couleurPossible">
+                <div class="bouleBleu selectBoule"  id="bleu" data-color="Bleu" draggable="true"></div>
+                <div class="bouleJaune selectBoule" id="jaune" data-color="Jaune" draggable="true"></div>
+                <div class="bouleViolet selectBoule" id="violet" data-color="Violet" draggable="true"></div>
+                <div class="bouleOrange selectBoule" id="orange" data-color="Orange" draggable="true"></div>
+                <div class="bouleVerte selectBoule" id="vert" data-color="Verte" draggable="true"></div>
+                <div class="bouleRouge selectBoule" id="rouge" data-color="Rouge" draggable="true"></div>
+                <div class="bouleMarron selectBoule" id="marron" data-color="Marron" draggable="true"></div>
+                <div class="bouleRose selectBoule" id="rose" data-color="Rose" draggable="true"></div>
             </div>
             <div>
                 <button class="button" id="validateButton">
@@ -166,15 +151,30 @@
                     <span class="border"></span>
                   </button>
             </div>
-            <div id="couleurPossible">
-                <div class="bouleBleu selectBoule"  id="bleu" data-color="Bleu" draggable="true"></div>
-                <div class="bouleJaune selectBoule" id="jaune" data-color="Jaune" draggable="true"></div>
-                <div class="bouleViolet selectBoule" id="violet" data-color="Violet" draggable="true"></div>
-                <div class="bouleOrange selectBoule" id="orange" data-color="Orange" draggable="true"></div>
-                <div class="bouleVerte selectBoule" id="vert" data-color="Verte" draggable="true"></div>
-                <div class="bouleRouge selectBoule" id="rouge" data-color="Rouge" draggable="true"></div>
-                <div class="bouleMarron selectBoule" id="marron" data-color="Marron" draggable="true"></div>
-                <div class="bouleRose selectBoule" id="rose" data-color="Rose" draggable="true"></div>
+            <div>
+                <button class="button" id="instructionButton">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      class="icon"
+                    >
+                      <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                      <g
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                        id="SVGRepo_tracerCarrier"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          fill="#222222"
+                          d="M11.5 13.8H10.1299C8.72143 13.8 8.01721 13.8 7.72228 13.3385C7.42735 12.8769 7.72321 12.2379 8.31493 10.9597L11.0463 5.06006C11.4205 4.25182 11.6075 3.8477 11.8038 3.89091C12 3.93413 12 4.37946 12 5.27013V9.7C12 9.9357 12 10.0536 12.0732 10.1268C12.1464 10.2 12.2643 10.2 12.5 10.2H13.8701C15.2786 10.2 15.9828 10.2 16.2777 10.6615C16.5726 11.1231 16.2768 11.7621 15.6851 13.0402L12.9537 18.9399C12.5795 19.7482 12.3925 20.1523 12.1962 20.1091C12 20.0659 12 19.6205 12 18.7299V14.3C12 14.0643 12 13.9464 11.9268 13.8732C11.8536 13.8 11.7357 13.8 11.5 13.8Z"
+                        ></path>
+                      </g>
+                    </svg>
+                    <span class="title"> REGLES DU JEU</span>
+                    <span class="border"></span>
+                  </button>
             </div>
         </div>
     </div>
