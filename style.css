@@ -161,17 +161,8 @@ h1:hover {
   height: 25px;
 }
 
-#choixCouleur {
-  display: flex;
-  justify-content: center;
-}
 
-#choixCouleurEssai,
-#checkCouleurEssai {
-  border: 2px purple solid;
-  width: 15%;
-  padding: 1%
-}
+
 
 
 
@@ -189,10 +180,18 @@ h1:hover {
 
 #piedDePage {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: 2%;
 }
+
+@media only screen and (max-width: 500px) {
+  .button {
+    margin-top: 15%;
+  }
+}
+
 
 #couleurPossible {
   display: flex;
@@ -357,4 +356,30 @@ h1:hover {
 
 .inactive {
   pointer-events: none;
+}
+
+
+#choixCouleur {
+  display: flex;
+  justify-content: center;
+}
+
+
+#choixCouleurEssai,
+#checkCouleurEssai {
+  border: 2px purple solid;
+  width: 15%;
+  padding: 1%
+}
+
+/* #espacementJeu {
+  width: 50px
+} */
+
+@media only screen and (max-width: 500px) {
+
+  #choixCouleurEssai,
+  #checkCouleurEssai {
+    width: 100%
+  }
 }
