@@ -128,7 +128,7 @@ h1:hover {
   border-radius: 50%;
   width: 25px;
   height: 25px;
-  margin: 0 5%;
+
 }
 
 .bouleBlanche {
@@ -152,7 +152,7 @@ h1:hover {
 
 .essai {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   border: 1px solid purple;
   border-radius: 10px;

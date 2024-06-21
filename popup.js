@@ -3,6 +3,7 @@ const buttonInstruction = document.getElementById("instructionButton");
 console.log(buttonInstruction);
 
 buttonInstruction.addEventListener("click", () => {
+  // confetti();
   Swal.fire({
     title: "Règle du jeu",
     html: `
