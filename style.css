@@ -161,12 +161,13 @@ h1:hover {
   height: 25px;
 }
 
-
-
-
-
+.check {
+  display: flex;
+  justify-content: flex-start;
+}
 
 #choixCouleurEssai {
+  justify-content: space-evenly;
   border-radius: 10px 0 0 10px;
 }
 
