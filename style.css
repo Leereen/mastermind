@@ -350,6 +350,12 @@ h1:hover {
   margin-left: 2rem
 }
 
+@media screen and (max-width: 400px) {
+  div:has(>#validateButton) {
+    margin-block-start: 9px;
+  }
+}
+
 #instructionButton {
   margin-left: 2.7rem
 }
