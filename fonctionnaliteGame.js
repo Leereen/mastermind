@@ -55,6 +55,11 @@ function checkColor(guess, codeSecret) {
     }
   }
   if (goodValue === 4) {
+    let audio = new Audio(
+      "musique/CRWDCheer_Cris et applaudissements d ados 1 (ID 0236)_LS.ogg"
+    );
+    audio.play();
+
     var duration = 15 * 1000;
     var animationEnd = Date.now() + duration;
     var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
