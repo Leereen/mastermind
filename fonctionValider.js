@@ -23,6 +23,9 @@ const codeSecret = secretCode();
 
 validateButton.addEventListener("click", () => {
   if (essai >= 11) {
+    let audio = new Audio("musique/fail-jingle-stereo-mix-88784.mp3");
+    audio.play();
+
     Swal.fire({
       title: "Vous avez perdu!😭",
       html: `<p>La bonne combinaison est ${codeSecret}</p>`,
