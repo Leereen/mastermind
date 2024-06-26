@@ -22,6 +22,12 @@ function findBouleCouleur(boule) {
 const codeSecret = secretCode();
 
 validateButton.addEventListener("click", () => {
+  if (essai == 1) {
+    let audio = new Audio(
+      "musique/HMNHart_Battement de coeur 1 (ID 0243)_LS.ogg"
+    );
+    audio.play();
+  }
   if (essai >= 11) {
     let audio = new Audio("musique/fail-jingle-stereo-mix-88784.mp3");
     audio.play();
@@ -50,15 +56,12 @@ validateButton.addEventListener("click", () => {
       findBouleCouleur(boule1)
     );
 
-    console.log(proposition);
-
     if (
       proposition[0] != null &&
       proposition[1] != null &&
       proposition[2] != null &&
       proposition[3] != null
     ) {
-      console.log(" essai avant activation boule" + essai);
       gamePlay(proposition, codeSecret);
       deactivateBoule(essai);
       essai += 1;

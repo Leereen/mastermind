@@ -13,13 +13,9 @@ const arrayColorPossible = [
 ];
 
 function statutValue(essai, goodValue, badValue) {
-  console.log("je suis rentrée dans statutValue");
-
   for (let i = 0; i < 13; i++) {
     let compteur = i;
     if (essai === i) {
-      console.log("good ds checkcolor" + goodValue);
-      console.log("bad ds checkcolor" + badValue);
       for (let i = 0; i < goodValue; i++) {
         const newDiv = document.createElement("div");
         newDiv.className = "bouleBlanche";
@@ -34,7 +30,6 @@ function statutValue(essai, goodValue, badValue) {
         document
           .querySelector("#checkEssai" + (compteur + 1))
           .appendChild(newDiv);
-        console.log(compteur);
       }
     }
   }
@@ -111,7 +106,6 @@ function secretCode() {
   let index2 = arrayColorPossible[Math.floor(Math.random() * 8)];
   let index3 = arrayColorPossible[Math.floor(Math.random() * 8)];
   let codeSecret = [index0, index1, index2, index3];
-  console.log(codeSecret);
   return codeSecret;
 }
 
